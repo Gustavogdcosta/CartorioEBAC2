@@ -211,7 +211,8 @@ int main()//Função principal
 		printf("Digite o número da opção desejada:\n\n");
 		printf("\t 1 - Registrar usuário(a)\n");
 		printf("\t 2 - Consultar usuário(a)\n");
-		printf("\t 3 - Deletar usuário(a)\n\n");
+		printf("\t 3 - Deletar usuário(a)\n");
+		printf("\t 4 - Sair do programa\n\n");
 		printf("Opção:  "); 
 		//fim do menu principal e da escolha do usuário
 	
@@ -240,6 +241,13 @@ int main()//Função principal
 			break;
 			//Fim da chamada da função deletar
 			
+			//Inicio da chamada de sair do programa
+			case 4:
+			printf("\t Obrigado!");
+			return 0;
+			break;	
+			//Fim da chamada de sair do programa
+			
 			//Inicio caso haja algum erro de digitação
 			default:
 			printf("essa opcão não está disponível\n\n");
@@ -250,5 +258,4 @@ int main()//Função principal
 		}//Fim da seleção do menu principal
 	} //fim da função de retorno ao menu
 } //fim da função principal
-
 
